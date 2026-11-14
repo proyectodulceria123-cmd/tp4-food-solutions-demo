@@ -242,6 +242,21 @@ def resultados(tipo, info, folder):
         cols = ["Algoritmo", "MAE CV (p.p.)", "MAE prueba (p.p.)", "RMSE prueba (p.p.)", "R² prueba"]
         st.dataframe(rows[cols].round(3), hide_index=True, use_container_width=True)
         st.info(f"Ridge fue elegido por validación temporal. Promedio histórico por masa: MAE de {info['mae_referencia']:.3f} pp en prueba, inferior al de Ridge. El modelo tiene limitaciones.")
+
+        # Gráfico TP2: errores de los modelos en el conjunto de prueba.
+        # Se alimenta de las métricas guardadas, sin reentrenar el modelo.
+        st.markdown("#### Comparación del MAE en prueba")
+        mae_grafico = rows[["Algoritmo", "MAE prueba (p.p.)"]].copy()
+        mae_grafico = pd.concat([
+            mae_grafico,
+            pd.DataFrame([{
+                "Algoritmo": "Promedio histórico por masa",
+                "MAE prueba (p.p.)": float(info["mae_referencia"]),
+            }]),
+        ], ignore_index=True)
+        mae_grafico = mae_grafico.rename(columns={"MAE prueba (p.p.)": "MAE (pp)"})
+        st.bar_chart(mae_grafico.set_index("Algoritmo"), use_container_width=True)
+        st.caption("Cuanto menor es el MAE, menor es el error promedio. Ridge fue seleccionado por validación cruzada temporal, no por su resultado en prueba.")
     else:
         rows = pd.DataFrame(info["modelos"])
         cols = ["Modelo", "CV balanced accuracy", "Test bal. acc.", "Test accuracy", "Precision (1)", "Recall (1)", "F1 (1)"]
