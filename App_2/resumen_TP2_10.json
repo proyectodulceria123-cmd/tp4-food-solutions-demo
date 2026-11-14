@@ -1,0 +1,44 @@
+{
+  "ganador": "Ridge",
+  "criterio": "MAE CV temporal (menor es mejor)",
+  "mae_referencia": 1.6510323474540392,
+  "comparacion": [
+    {
+      "Algoritmo": "Ridge",
+      "MAE CV (p.p.)": 1.909280573950714,
+      "MAE prueba (p.p.)": 1.7186301155864676,
+      "RMSE prueba (p.p.)": 2.263271970238785,
+      "R² prueba": 0.03645481668789663,
+      "Mejores parámetros": "{'modelo__alpha': 10}"
+    },
+    {
+      "Algoritmo": "Árbol de decisión",
+      "MAE CV (p.p.)": 1.9253677651114813,
+      "MAE prueba (p.p.)": 1.711290827889129,
+      "RMSE prueba (p.p.)": 2.2842881217680424,
+      "R² prueba": 0.018477277973392048,
+      "Mejores parámetros": "{'modelo__max_depth': 3, 'modelo__min_samples_leaf': 10}"
+    },
+    {
+      "Algoritmo": "Random Forest",
+      "MAE CV (p.p.)": 1.922955103449206,
+      "MAE prueba (p.p.)": 1.7320649334822849,
+      "RMSE prueba (p.p.)": 2.295131661626453,
+      "R² prueba": 0.00913656276120478,
+      "Mejores parámetros": "{'modelo__max_depth': 10, 'modelo__min_samples_leaf': 10, 'modelo__n_estimators': 200}"
+    }
+  ],
+  "n_entrenamiento": 766,
+  "n_prueba": 328,
+  "n_reservadas": 10,
+  "variables": [
+    "MASA",
+    "LITROS DE LECHE",
+    "AZUCAR por litro",
+    "SUERO por litro",
+    "BICARBONATO por litro",
+    "L.P.D por litro",
+    "MATERIA GRASA",
+    "PROTEINAS"
+  ]
+}
