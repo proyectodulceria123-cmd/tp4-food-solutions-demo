@@ -1,0 +1,162 @@
+[
+  {
+    "id": "E01",
+    "fecha": "2026-02-11",
+    "masa": "MASA 7",
+    "lote": "86",
+    "entradas": {
+      "MASA": "MASA 7",
+      "LITROS DE LECHE": 600.0,
+      "AZUCAR por litro": 0.425,
+      "SUERO por litro": 0.2275,
+      "BICARBONATO por litro": 0.0075,
+      "L.P.D por litro": 0.0025,
+      "MATERIA GRASA": 3.51,
+      "PROTEINAS": 3.38
+    }
+  },
+  {
+    "id": "E02",
+    "fecha": "2026-02-20",
+    "masa": "MASA 2",
+    "lote": "96",
+    "entradas": {
+      "MASA": "MASA 2",
+      "LITROS DE LECHE": 1000.0,
+      "AZUCAR por litro": 0.233,
+      "SUERO por litro": 0.033299999999999996,
+      "BICARBONATO por litro": 0.0008,
+      "L.P.D por litro": 0.004,
+      "MATERIA GRASA": 4.15,
+      "PROTEINAS": 3.31
+    }
+  },
+  {
+    "id": "E03",
+    "fecha": "2026-03-13",
+    "masa": "MASA 1",
+    "lote": "31",
+    "entradas": {
+      "MASA": "MASA 1",
+      "LITROS DE LECHE": 800.0,
+      "AZUCAR por litro": 0.25,
+      "SUERO por litro": 0.0,
+      "BICARBONATO por litro": 0.0008749999999999999,
+      "L.P.D por litro": 0.0015,
+      "MATERIA GRASA": 4.14,
+      "PROTEINAS": 3.38
+    }
+  },
+  {
+    "id": "E04",
+    "fecha": "2026-03-16",
+    "masa": "MASA 6",
+    "lote": "35",
+    "entradas": {
+      "MASA": "MASA 6",
+      "LITROS DE LECHE": 1000.0,
+      "AZUCAR por litro": 0.233,
+      "SUERO por litro": 0.033299999999999996,
+      "BICARBONATO por litro": 0.0008,
+      "L.P.D por litro": 0.002,
+      "MATERIA GRASA": 4.16,
+      "PROTEINAS": 3.4
+    }
+  },
+  {
+    "id": "E05",
+    "fecha": "2026-03-26",
+    "masa": "MASA 1",
+    "lote": "63",
+    "entradas": {
+      "MASA": "MASA 1",
+      "LITROS DE LECHE": 800.0,
+      "AZUCAR por litro": 0.25,
+      "SUERO por litro": 0.0,
+      "BICARBONATO por litro": 0.0008749999999999999,
+      "L.P.D por litro": 0.0,
+      "MATERIA GRASA": 4.27,
+      "PROTEINAS": 3.42
+    }
+  },
+  {
+    "id": "E06",
+    "fecha": "2026-04-13",
+    "masa": "MASA 3",
+    "lote": "99",
+    "entradas": {
+      "MASA": "MASA 3",
+      "LITROS DE LECHE": 500.0,
+      "AZUCAR por litro": 0.3,
+      "SUERO por litro": 0.05,
+      "BICARBONATO por litro": 0.0002,
+      "L.P.D por litro": 0.003,
+      "MATERIA GRASA": 4.1,
+      "PROTEINAS": 3.4
+    }
+  },
+  {
+    "id": "E07",
+    "fecha": "2026-05-16",
+    "masa": "MASA 2",
+    "lote": "65",
+    "entradas": {
+      "MASA": "MASA 2",
+      "LITROS DE LECHE": 1000.0,
+      "AZUCAR por litro": 0.233,
+      "SUERO por litro": 0.033299999999999996,
+      "BICARBONATO por litro": 0.0008,
+      "L.P.D por litro": 0.0,
+      "MATERIA GRASA": 4.15,
+      "PROTEINAS": 3.48
+    }
+  },
+  {
+    "id": "E08",
+    "fecha": "2026-06-29",
+    "masa": "MASA 5",
+    "lote": "32",
+    "entradas": {
+      "MASA": "MASA 5",
+      "LITROS DE LECHE": 800.0,
+      "AZUCAR por litro": 0.3275,
+      "SUERO por litro": 0.0625,
+      "BICARBONATO por litro": 0.000625,
+      "L.P.D por litro": 0.0,
+      "MATERIA GRASA": 4.02,
+      "PROTEINAS": 3.4
+    }
+  },
+  {
+    "id": "E09",
+    "fecha": "2026-07-10",
+    "masa": "MASA 2",
+    "lote": "50",
+    "entradas": {
+      "MASA": "MASA 2",
+      "LITROS DE LECHE": 950.0,
+      "AZUCAR por litro": 0.23299999999999998,
+      "SUERO por litro": 0.0333,
+      "BICARBONATO por litro": 0.0008421052631578948,
+      "L.P.D por litro": 0.0,
+      "MATERIA GRASA": 4.3,
+      "PROTEINAS": 3.44
+    }
+  },
+  {
+    "id": "E10",
+    "fecha": "2026-07-30",
+    "masa": "MASA 3",
+    "lote": "82",
+    "entradas": {
+      "MASA": "MASA 3",
+      "LITROS DE LECHE": 600.0,
+      "AZUCAR por litro": 0.3,
+      "SUERO por litro": 0.05,
+      "BICARBONATO por litro": 8.333333333333334e-05,
+      "L.P.D por litro": 0.0,
+      "MATERIA GRASA": 3.82,
+      "PROTEINAS": 3.37
+    }
+  }
+]

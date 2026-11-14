@@ -1,0 +1,198 @@
+{
+  "titulo": "Clasificación de elaboraciones por debajo del rendimiento esperado",
+  "ganador": "Árbol de decisión",
+  "criterio": "Mayor exactitud balanceada en CV estratificada de 5 pliegues",
+  "parametros": {
+    "modelo__class_weight": "balanced",
+    "modelo__max_depth": 3,
+    "modelo__min_samples_leaf": 10
+  },
+  "n_inicial": 1111,
+  "n_comparables": 1105,
+  "train": 875,
+  "test": 220,
+  "reservados": 10,
+  "balance": {
+    "0": 456,
+    "1": 649
+  },
+  "modelos": [
+    {
+      "Modelo": "Baseline mayoría",
+      "CV balanced accuracy": null,
+      "Train bal. acc.": 0.5,
+      "Test bal. acc.": 0.5,
+      "Train accuracy": 0.5885714286,
+      "Test accuracy": 0.5863636364,
+      "Precision (1)": 0.5863636364,
+      "Recall (1)": 1.0,
+      "F1 (1)": 0.7392550143,
+      "F1 ponderado": 0.4334722584,
+      "ROC-AUC": 0.5,
+      "Brecha train-test": 0.0
+    },
+    {
+      "Modelo": "Regresión logística",
+      "CV balanced accuracy": 0.6314817052,
+      "Train bal. acc.": 0.6565668824,
+      "Test bal. acc.": 0.606099327,
+      "Train accuracy": 0.672,
+      "Test accuracy": 0.6272727273,
+      "Precision (1)": 0.6666666667,
+      "Recall (1)": 0.7286821705,
+      "F1 (1)": 0.6962962963,
+      "F1 ponderado": 0.6224004753,
+      "ROC-AUC": 0.6605758583,
+      "Brecha train-test": 0.0504675554
+    },
+    {
+      "Modelo": "K vecinos (KNN)",
+      "CV balanced accuracy": 0.6221379602,
+      "Train bal. acc.": 0.7098435814,
+      "Test bal. acc.": 0.615767953,
+      "Train accuracy": 0.7302857143,
+      "Test accuracy": 0.65,
+      "Precision (1)": 0.664556962,
+      "Recall (1)": 0.8139534884,
+      "F1 (1)": 0.7317073171,
+      "F1 ponderado": 0.6345129922,
+      "ROC-AUC": 0.6354885425,
+      "Brecha train-test": 0.0940756285
+    },
+    {
+      "Modelo": "Árbol de decisión",
+      "CV balanced accuracy": 0.6514528328,
+      "Train bal. acc.": 0.6599649407,
+      "Test bal. acc.": 0.5764119601,
+      "Train accuracy": 0.6582857143,
+      "Test accuracy": 0.5772727273,
+      "Precision (1)": 0.6578947368,
+      "Recall (1)": 0.5813953488,
+      "F1 (1)": 0.6172839506,
+      "F1 ponderado": 0.5803192671,
+      "ROC-AUC": 0.6247124968,
+      "Brecha train-test": 0.0835529805
+    },
+    {
+      "Modelo": "Random Forest [opcional]",
+      "CV balanced accuracy": 0.6518492485,
+      "Train bal. acc.": 0.712688781,
+      "Test bal. acc.": 0.622923588,
+      "Train accuracy": 0.7154285714,
+      "Test accuracy": 0.6318181818,
+      "Precision (1)": 0.6904761905,
+      "Recall (1)": 0.6744186047,
+      "F1 (1)": 0.6823529412,
+      "F1 ponderado": 0.6326376644,
+      "ROC-AUC": 0.6799557032,
+      "Brecha train-test": 0.089765193
+    }
+  ],
+  "variables": [
+    "MASA",
+    "LITROS DE LECHE",
+    "AZUCAR por litro",
+    "SUERO por litro",
+    "BICARBONATO por litro",
+    "L.P.D por litro",
+    "MATERIA GRASA",
+    "PROTEINAS"
+  ],
+  "intervalos": {
+    "LITROS DE LECHE": [
+      150.0,
+      1160.0,
+      500.0
+    ],
+    "AZUCAR por litro": [
+      0.2169230769230769,
+      0.425,
+      0.3
+    ],
+    "SUERO por litro": [
+      0.0,
+      0.22766666666666666,
+      0.05
+    ],
+    "BICARBONATO por litro": [
+      0.0,
+      0.007575757575757576,
+      0.00065
+    ],
+    "L.P.D por litro": [
+      0.0,
+      0.012,
+      0.0015
+    ],
+    "MATERIA GRASA": [
+      3.0,
+      4.6,
+      4.0
+    ],
+    "PROTEINAS": [
+      3.1,
+      3.85,
+      3.4
+    ]
+  },
+  "cm_ganador": [
+    [
+      52,
+      39
+    ],
+    [
+      54,
+      75
+    ]
+  ],
+  "importancias": [
+    {
+      "Variable": "BICARBONATO por litro",
+      "Aumento al permutar": 0.0655187835,
+      "Desvío": 0.0405102028
+    },
+    {
+      "Variable": "SUERO por litro",
+      "Aumento al permutar": 0.0203222165,
+      "Desvío": 0.0040068869
+    },
+    {
+      "Variable": "PROTEINAS",
+      "Aumento al permutar": 0.003716245,
+      "Desvío": 0.0054620417
+    },
+    {
+      "Variable": "MASA",
+      "Aumento al permutar": 0.0,
+      "Desvío": 0.0
+    },
+    {
+      "Variable": "AZUCAR por litro",
+      "Aumento al permutar": 0.0,
+      "Desvío": 0.0
+    },
+    {
+      "Variable": "LITROS DE LECHE",
+      "Aumento al permutar": 0.0,
+      "Desvío": 0.0
+    },
+    {
+      "Variable": "L.P.D por litro",
+      "Aumento al permutar": 0.0,
+      "Desvío": 0.0
+    },
+    {
+      "Variable": "MATERIA GRASA",
+      "Aumento al permutar": 0.0,
+      "Desvío": 0.0
+    }
+  ],
+  "silhouette": {
+    "2": 0.5905,
+    "3": 0.2891,
+    "4": 0.2813,
+    "5": 0.2326,
+    "6": 0.2362
+  },
+  "k": 2
+}
